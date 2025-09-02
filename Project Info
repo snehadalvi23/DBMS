@@ -1,0 +1,32 @@
+                                                         Food Canteen Management System
+About the Project
+This project is a Java + MySQL based Food Canteen Management System.
+The idea was simple: canteen operations like taking orders, generating bills, and tracking inventory are usually manual and time-consuming. So, I built a system that automates all these tasks and makes the process faster and error-free.
+
+I also explored an extension idea where students can:
+Pre-order their food before arriving at the canteen
+Select a time slot for pickup
+Make payment in advance (UPI/online)
+Store the UTR number (payment reference) in the database
+The canteen staff can then verify the payment and serve the food directly → reducing waiting time
+
+✨ What it Can Do
+Take new food orders, update/cancel them if needed
+Generate bills automatically with proper calculations
+Keep track of food stock (inventory updates after every sale)
+Allow admins to add/edit food items and monitor overall sales
+Store everything securely in a normalized MySQL database using JDBC
+
+🛠️ Tech Stack
+Java (NetBeans IDE) – core application
+MySQL – backend database
+JDBC – connectivity between Java and MySQL
+DBMS Concepts – normalization, schema design, queries
+
+🗄️ Database Overview
+Some main tables I designed:
+users → login details of admins/cashiers
+menu → list of food items, categories, prices
+orders → order details (items + quantity, time slot if pre-order)
+billing → transaction details (order id, amount, UTR number, date)
+inventory → tracks available stock
